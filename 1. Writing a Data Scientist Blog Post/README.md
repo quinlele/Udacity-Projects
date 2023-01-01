@@ -20,6 +20,6 @@ How long have the survey participants coded?
 
 ## Result:
 
-Blog: 
+Blog: https://medium.com/@quinlele/dive-into-who-do-the-stack-overflow-annual-developer-survey-2022-8932984352e
 
 Notebook: https://github.com/quinlele/Udacity-Projects/blob/main/1.%20Writing%20a%20Data%20Scientist%20Blog%20Post/notebook.ipynb
