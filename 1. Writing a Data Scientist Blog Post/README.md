@@ -19,6 +19,7 @@ Which country do the survey participants come from?
 How long have the survey participants coded?
 
 ## Result:
-Blog:  https://medium.com/@swatisinghchanchaluni/developers-vs-non-developers-which-profession-is-better-8a18aeb4d65a
 
-Notebook - https://github.com/Swatichanchal/Stack-Overflow-Developer-Survey-2017
+Blog: 
+
+Notebook: https://github.com/quinlele/Udacity-Projects/blob/main/1.%20Writing%20a%20Data%20Scientist%20Blog%20Post/notebook.ipynb
