@@ -12,8 +12,10 @@ This data set contains simulated data that mimics customer behavior on the Starb
 
 Not all users receive the same offer, and that is the challenge to solve with this data set.
 
-portfolio.json - containing offer ids and meta data about each offer (duration, type, etc.).
-profile.json - demographic data for each customer.
+portfolio.json - containing offer ids and meta data about each offer (duration, type, etc.)
+
+profile.json - demographic data for each customer
+
 transcript.json - records for transactions, offers received, offers viewed, and offers completed.
 
 # Project purpose
