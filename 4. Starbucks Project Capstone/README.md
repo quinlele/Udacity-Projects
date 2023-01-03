@@ -22,6 +22,10 @@ transcript.json - records for transactions, offers received, offers viewed, and 
 
 Combine transaction, demographic and offer data to determine which demographic groups respond best to which offer type
 
+# File Description:
+
+
+
 # Results
 
 Blog: https://medium.com/@quinlele/starbucks-capstone-project-70b4afb4c499
