@@ -24,6 +24,6 @@ Combine transaction, demographic and offer data to determine which demographic g
 
 # Results
 
-Blog: 
+Blog: https://medium.com/@quinlele/starbucks-capstone-project-70b4afb4c499
 
 Notebook: https://github.com/quinlele/Udacity-Projects/blob/main/4.%20Starbucks%20Project%20Capstone/Starbucks_Capstone_notebook.ipynb
