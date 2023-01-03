@@ -24,10 +24,14 @@ Combine transaction, demographic and offer data to determine which demographic g
 
 # File Description:
 
-
+Starbucks_Capstone_notebook.ipynb : notebook of analysis and code
 
 # Results
 
 Blog: https://medium.com/@quinlele/starbucks-capstone-project-70b4afb4c499
 
 Notebook: https://github.com/quinlele/Udacity-Projects/blob/main/4.%20Starbucks%20Project%20Capstone/Starbucks_Capstone_notebook.ipynb
+
+# Licensing, Authors and Acknowledgements
+
+Credited to Udacity Data Scientists Nanodegree dataset
