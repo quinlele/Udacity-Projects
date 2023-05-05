@@ -8,15 +8,16 @@ class LoadDimensionOperator(BaseOperator):
 
     @apply_defaults
     def __init__(self,
-                 # Define your operators params (with defaults) here
-                 # Example:
-                 # conn_id = your-connection-name
+                conn_id = "",
+                checks = "",
+                sql = "",
                  *args, **kwargs):
 
         super(LoadDimensionOperator, self).__init__(*args, **kwargs)
-        # Map params here
-        # Example:
-        # self.conn_id = conn_id
+        
+        self.conn_id = conn_id
+        self.checks = checks
+        self.sql = sql
 
     def execute(self, context):
         self.log.info('LoadDimensionOperator not implemented yet')
