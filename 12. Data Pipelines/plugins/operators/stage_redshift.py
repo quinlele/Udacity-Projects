@@ -7,15 +7,22 @@ class StageToRedshiftOperator(BaseOperator):
 
     @apply_defaults
     def __init__(self,
-                 # Define your operators params (with defaults) here
-                 # Example:
-                 # redshift_conn_id=your-connection-name
+                 conn_id = "",
+                 checks = "",
+                 aws_credentials_id = "",
+                 s3_bucket =. "",
+                 s3_key = "",
+                 region = "",
                  *args, **kwargs):
 
         super(StageToRedshiftOperator, self).__init__(*args, **kwargs)
-        # Map params here
-        # Example:
-        # self.conn_id = conn_id
+        
+        self.conn_id = conn_id
+        self.checks = checks
+        self.aws_credentials_id = aws_credentials_id
+        self.s3_bucket = s3_bucket
+        self.s3_key = s3_key
+        self.region = region
 
     def execute(self, context):
         self.log.info('StageToRedshiftOperator not implemented yet')
