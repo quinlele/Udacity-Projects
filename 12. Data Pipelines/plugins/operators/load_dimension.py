@@ -21,3 +21,6 @@ class LoadDimensionOperator(BaseOperator):
 
     def execute(self, context):
         self.log.info('LoadDimensionOperator not implemented yet')
+        hook = PostgresHook(self.conn_id)
+        
+        
