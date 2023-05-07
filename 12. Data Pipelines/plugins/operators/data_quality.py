@@ -20,3 +20,9 @@ class DataQualityOperator(BaseOperator):
 
     def execute(self, context):
         self.log.info('DataQualityOperator not implemented yet')
+        hook = PostgresHook(self.conn_id)
+        
+        for check in self.checks:
+            self.log.info(f'Running query: "{sql}"')
+            check.records = hook.get_records(sql)
+            result = check.validate()
