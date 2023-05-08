@@ -12,6 +12,7 @@ class LoadDimensionOperator(BaseOperator):
                 checks = "",
                 sql = "",
                 trunc=False,
+                table="",
                  *args, **kwargs):
 
         super(LoadDimensionOperator, self).__init__(*args, **kwargs)
