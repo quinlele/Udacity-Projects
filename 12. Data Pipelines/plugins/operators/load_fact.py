@@ -21,4 +21,6 @@ class LoadFactOperator(BaseOperator):
 
     def execute(self, context):
         self.log.info('LoadFactOperator start')
-        hook = PostgresHook(conn_id)
+        hook = PostgresHook(self.conn_id)
+        
+        
