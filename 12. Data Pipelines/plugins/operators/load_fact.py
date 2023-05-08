@@ -11,6 +11,7 @@ class LoadFactOperator(BaseOperator):
                  conn_id = "",
                  checks = "",
                  sql = "",
+                 table="",
                  *args, **kwargs):
 
         super(LoadFactOperator, self).__init__(*args, **kwargs)
