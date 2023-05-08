@@ -23,4 +23,7 @@ class LoadFactOperator(BaseOperator):
         self.log.info('LoadFactOperator start')
         hook = PostgresHook(self.conn_id)
         
+        self.log.info(f'Loading dimension table {self.table}')
+        format_sql = f"INSERT INTO {self.sql}"
         
+        hook.run(format_sql)
