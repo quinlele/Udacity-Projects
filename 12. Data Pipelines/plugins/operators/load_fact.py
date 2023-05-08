@@ -20,4 +20,5 @@ class LoadFactOperator(BaseOperator):
         self.sql = sql
 
     def execute(self, context):
-        self.log.info('LoadFactOperator not implemented yet')
+        self.log.info('LoadFactOperator start')
+        hook = PostgresHook(conn_id)
