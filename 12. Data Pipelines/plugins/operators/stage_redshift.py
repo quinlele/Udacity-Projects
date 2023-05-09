@@ -10,7 +10,7 @@ class StageToRedshiftOperator(BaseOperator):
                  conn_id = "",
                  checks = "",
                  aws_credentials_id = "",
-                 s3_bucket =. "",
+                 s3_bucket = "",
                  s3_key = "",
                  region = "",
                  table = "",
