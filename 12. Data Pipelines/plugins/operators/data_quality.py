@@ -23,6 +23,7 @@ class DataQualityOperator(BaseOperator):
         hook = PostgresHook(self.conn_id)
         
         for check in self.checks:
+            sql = check.get('check_sql')
             self.log.info(f'Running query: "{sql}"')
             check.records = hook.get_records(sql)
             
