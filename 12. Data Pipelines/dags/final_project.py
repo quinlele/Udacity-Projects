@@ -19,7 +19,7 @@ default_args = {
     'email_on_retry': False
 }
 
-dag = DAG('final_project',
+@dag('final_project',
     default_args=default_args,
     description='Load and transform data in Redshift with Airflow',
     schedule_interval='0 * * * *'
@@ -98,8 +98,7 @@ def final_project():
         task_id='Run_data_quality_checks',
         dag=dag,
         conn_id="redshift",
-        tables=[ "songplays", "songs", "artists",  "time", "users"],
-        checks = ""
+        tables=[ "songplays", "songs", "artists",  "time", "users"]
     )
 
     end_operator = DummyOperator(task_id='Stop_execution',  dag=dag)
