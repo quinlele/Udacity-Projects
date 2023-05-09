@@ -3,10 +3,10 @@ import pendulum
 import os
 from airflow.decorators import dag
 from airflow.operators.dummy_operator import DummyOperator
-from final_project_operators.stage_redshift import StageToRedshiftOperator
-from final_project_operators.load_fact import LoadFactOperator
-from final_project_operators.load_dimension import LoadDimensionOperator
-from final_project_operators.data_quality import DataQualityOperator
+from plugins.operators.stage_redshift import StageToRedshiftOperator
+from plugins.operators.load_fact import LoadFactOperator
+from plugins.operators.load_dimension import LoadDimensionOperator
+from plugins.operators.data_quality import DataQualityOperator
 from udacity.common import final_project_sql_statements
 
 
@@ -98,7 +98,8 @@ def final_project():
         task_id='Run_data_quality_checks',
         dag=dag,
         conn_id="redshift",
-        tables=[ "songplays", "songs", "artists",  "time", "users"]
+        tables=[ "songplays", "songs", "artists",  "time", "users"],
+        checks = ""
     )
 
     end_operator = DummyOperator(task_id='Stop_execution',  dag=dag)
