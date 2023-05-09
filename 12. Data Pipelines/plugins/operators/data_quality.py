@@ -26,4 +26,5 @@ class DataQualityOperator(BaseOperator):
             sql = check.get('check_sql')
             self.log.info(f'Running query: "{sql}"')
             check.records = hook.get_records(sql)
+            expected_result = check.get('expected_result')
             
