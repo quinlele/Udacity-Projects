@@ -46,10 +46,10 @@ Divvy is a bike sharing program in Chicago, Illinois USA that allows riders to p
 
 <img width="1277" alt="image" src="https://github.com/quinlele/Udacity-Projects/assets/52246911/a5c86beb-4ae7-4e39-9489-0ce561d44d44">
 
-Task 5: LOAD the data into external tables in the data warehouse
+## Task 5: LOAD the data into external tables in the data warehouse
 
 <img width="1277" alt="image" src="https://github.com/quinlele/Udacity-Projects/assets/52246911/18806a67-da79-49f6-ab83-9553e9c5d73e">
 
-Task 6: TRANSFORM the data to the star schema
+## Task 6: TRANSFORM the data to the star schema
 
 <img width="1277" alt="image" src="https://github.com/quinlele/Udacity-Projects/assets/52246911/560e4eee-1b1f-45ec-9afe-d056f706e02a">
