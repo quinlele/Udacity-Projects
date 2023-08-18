@@ -27,3 +27,11 @@ Divvy is a bike sharing program in Chicago, Illinois USA that allows riders to p
 
 - Based on how many rides the rider averages per month
 - Based on how many minutes the rider spends on a bike per month
+
+## Task 1: Create Azure resources
+
+<img width="1277" alt="image" src="https://github.com/quinlele/Udacity-Projects/assets/52246911/ebef73dd-b036-4fde-9ee0-06f575237881">
+
+## Task 2: Design a star schema
+
+<img width="1128" alt="image" src="https://github.com/quinlele/Udacity-Projects/assets/52246911/2a432110-6688-41a1-945b-c6adb8c94ed9">
