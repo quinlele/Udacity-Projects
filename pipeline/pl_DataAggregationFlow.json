@@ -1,0 +1,53 @@
+{
+	"name": "pl_DataAggregationFlow",
+	"properties": {
+		"activities": [
+			{
+				"name": "Dataflow Flow Aggregate Data",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "Dataflow Aggerate Data",
+						"type": "DataFlowReference",
+						"parameters": {
+							"fiscalYear": {
+								"value": "@pipeline().parameters.pipeline_param_ficalYear",
+								"type": "Expression"
+							}
+						}
+					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "AzureDataLakeStorage1",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "udapro4/dirstaging"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"parameters": {
+			"pipeline_param_ficalYear": {
+				"type": "int",
+				"defaultValue": 2020
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-09-01T15:22:44Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
