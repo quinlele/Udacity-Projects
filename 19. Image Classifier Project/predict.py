@@ -38,9 +38,9 @@ def predict(image_path, model, top_k):
     return probs, labels
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input', default='./test_images/hard-leaved_pocket_orchid.jpg', action="store", type = str, help='Image path')
-parser.add_argument('--model', default='./image_classifier_model.h5', action="store", type = str, help='Classifier path')
-parser.add_argument('--top_k', default=5, action="store", type=int, help='Return the top K most likely classes')
+parser.add_argument('--input', default='./test_images/hard-leaved_pocket_orchid.jpg', action="store", type = str, help='Path to Image folder')
+parser.add_argument('--model', default='./image_classifier_model.h5', action="store", type = str, help='Path to saved model')
+parser.add_argument('--top_k', default=5, action="store", type=int, help='Return the top K class probabilities')
 parser.add_argument('--category_names', default='./label_map.json', action="store", type=str, help='Path to a JSON file mapping labels to flower names')
 
 arg_parser = parser.parse_args()
